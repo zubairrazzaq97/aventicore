@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aventicore — Software, Web & Social Growth Experts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+
+<!-- Animated core background -->
+<canvas id="core-bg"></canvas>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="17" cy="17" r="16" stroke="var(--accent)" stroke-width="1.5"/>
+        <circle cx="17" cy="17" r="5" fill="var(--accent)"/>
+        <circle cx="17" cy="4" r="2" fill="var(--accent-2)"/>
+        <circle cx="30" cy="17" r="2" fill="var(--accent-2)"/>
+        <circle cx="17" cy="30" r="2" fill="var(--accent-2)"/>
+        <circle cx="4" cy="17" r="2" fill="var(--accent-2)"/>
+        <line x1="17" y1="17" x2="17" y2="6" stroke="var(--accent-2)" stroke-width="1"/>
+        <line x1="17" y1="17" x2="28" y2="17" stroke="var(--accent-2)" stroke-width="1"/>
+        <line x1="17" y1="17" x2="17" y2="28" stroke="var(--accent-2)" stroke-width="1"/>
+        <line x1="17" y1="17" x2="6" y2="17" stroke="var(--accent-2)" stroke-width="1"/>
+      </svg>
+      <span>Aventicore</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#work">Process</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn-small">Book a Call</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">
+      <span class="dot-pulse"></span>
+      Software · Web · Social Growth
+    </div>
+    <h1>We build the <span class="grad-text">core systems</span><br>behind digital growth.</h1>
+    <p class="hero-sub">
+      Aventicore designs software, builds websites, and engineers social media growth —
+      from Facebook monetization to YouTube channel automation — so your brand
+      compounds revenue, not just reach.
+    </p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary">Start a Project</a>
+      <a href="#services" class="btn btn-ghost">Explore Services</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num" data-count="120">0</span><span class="stat-label">Projects Shipped</span></div>
+      <div class="stat"><span class="stat-num" data-count="48">0</span><span class="stat-label">Channels Automated</span></div>
+      <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label">x Avg. Revenue Growth</span></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <svg viewBox="0 0 480 480" class="core-svg" id="coreSvg">
+      <defs>
+        <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.55"/>
+          <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#22D3EE"/>
+          <stop offset="100%" stop-color="#8B5CF6"/>
+        </linearGradient>
+      </defs>
+      <circle cx="240" cy="240" r="160" fill="url(#coreGlow)"/>
+      <g stroke="url(#lineGrad)" stroke-width="1.2" fill="none" opacity="0.6">
+        <circle cx="240" cy="240" r="180" stroke-dasharray="2 6"/>
+        <circle cx="240" cy="240" r="130"/>
+        <circle cx="240" cy="240" r="80" stroke-dasharray="4 4"/>
+      </g>
+      <!-- connecting lines -->
+      <g stroke="url(#lineGrad)" stroke-width="1" opacity="0.5">
+        <line x1="240" y1="240" x2="240" y2="60"/>
+        <line x1="240" y1="240" x2="395" y2="150"/>
+        <line x1="240" y1="240" x2="395" y2="330"/>
+        <line x1="240" y1="240" x2="240" y2="420"/>
+        <line x1="240" y1="240" x2="85" y2="330"/>
+        <line x1="240" y1="240" x2="85" y2="150"/>
+      </g>
+      <!-- nodes -->
+      <g class="orbit-node" data-label="Code">
+        <circle cx="240" cy="60" r="22" fill="#13131F" stroke="#22D3EE" stroke-width="1.5"/>
+        <text x="240" y="65" text-anchor="middle" class="node-icon">{ }</text>
+      </g>
+      <g class="orbit-node" data-label="Web">
+        <circle cx="395" cy="150" r="22" fill="#13131F" stroke="#22D3EE" stroke-width="1.5"/>
+        <text x="395" y="155" text-anchor="middle" class="node-icon">◧</text>
+      </g>
+      <g class="orbit-node" data-label="Facebook">
+        <circle cx="395" cy="330" r="22" fill="#13131F" stroke="#22D3EE" stroke-width="1.5"/>
+        <text x="395" y="335" text-anchor="middle" class="node-icon">f</text>
+      </g>
+      <g class="orbit-node" data-label="YouTube">
+        <circle cx="240" cy="420" r="22" fill="#13131F" stroke="#22D3EE" stroke-width="1.5"/>
+        <text x="240" y="427" text-anchor="middle" class="node-icon">▶</text>
+      </g>
+      <g class="orbit-node" data-label="Growth">
+        <circle cx="85" cy="330" r="22" fill="#13131F" stroke="#22D3EE" stroke-width="1.5"/>
+        <text x="85" y="335" text-anchor="middle" class="node-icon">↗</text>
+      </g>
+      <g class="orbit-node" data-label="Automation">
+        <circle cx="85" cy="150" r="22" fill="#13131F" stroke="#22D3EE" stroke-width="1.5"/>
+        <text x="85" y="156" text-anchor="middle" class="node-icon">⚙</text>
+      </g>
+      <!-- core -->
+      <circle cx="240" cy="240" r="46" fill="#13131F" stroke="#8B5CF6" stroke-width="2"/>
+      <circle cx="240" cy="240" r="46" fill="url(#coreGlow)" opacity="0.6"/>
+      <text x="240" y="248" text-anchor="middle" class="core-label">AVNT</text>
+    </svg>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="trust-strip">
+  <div class="trust-inner">
+    <span>Trusted across</span>
+    <div class="trust-items">
+      <span>SaaS Startups</span>
+      <span>Creators</span>
+      <span>E-commerce</span>
+      <span>Agencies</span>
+      <span>Local Businesses</span>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="section-head">
+    <span class="eyebrow eyebrow-plain">What we do</span>
+    <h2>Four disciplines. One growth engine.</h2>
+    <p>Every service plugs into the same core: build it well, get it seen, get it paid.</p>
+  </div>
+
+  <div class="service-grid">
+    <article class="service-card">
+      <div class="service-icon">
+        <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="8" width="40" height="28" rx="3" stroke="currentColor" stroke-width="2"/><path d="M16 18l-5 6 5 6M32 18l5 6-5 6M27 16l-6 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h3>Software Development</h3>
+      <p>Custom web apps, internal tools, and automation systems built on modern, maintainable stacks — from MVP to production-grade platforms.</p>
+      <ul class="service-list">
+        <li>Web &amp; mobile applications</li>
+        <li>API integrations &amp; dashboards</li>
+        <li>Workflow automation tools</li>
+      </ul>
+    </article>
+
+    <article class="service-card">
+      <div class="service-icon">
+        <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="19" stroke="currentColor" stroke-width="2"/><path d="M5 24h38M24 5c5 5 8 12 8 19s-3 14-8 19c-5-5-8-12-8-19s3-14 8-19z" stroke="currentColor" stroke-width="2"/></svg>
+      </div>
+      <h3>Website Design</h3>
+      <p>Fast, conversion-focused websites that look sharp on every device — from landing pages to full company sites and online stores.</p>
+      <ul class="service-list">
+        <li>Custom UI/UX design</li>
+        <li>E-commerce &amp; landing pages</li>
+        <li>SEO-ready, mobile-first builds</li>
+      </ul>
+    </article>
+
+    <article class="service-card">
+      <div class="service-icon">
+        <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="6" width="36" height="36" rx="8" stroke="currentColor" stroke-width="2"/><path d="M24 14v20M16 24h16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+      </div>
+      <h3>Facebook Monetization</h3>
+      <p>Page setup, content strategy, and monetization eligibility — turning Facebook pages into consistent ad-revenue and audience assets.</p>
+      <ul class="service-list">
+        <li>In-stream ads &amp; eligibility setup</li>
+        <li>Page growth &amp; content strategy</li>
+        <li>Audience &amp; engagement optimization</li>
+      </ul>
+    </article>
+
+    <article class="service-card">
+      <div class="service-icon">
+        <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="10" width="40" height="28" rx="6" stroke="currentColor" stroke-width="2"/><path d="M20 18l10 6-10 6V18z" fill="currentColor"/></svg>
+      </div>
+      <h3>YouTube Channel Automation</h3>
+      <p>End-to-end automated channel pipelines — research, scripting, voiceover, editing, and upload scheduling — built to scale content output.</p>
+      <ul class="service-list">
+        <li>Automated content pipelines</li>
+        <li>Channel setup &amp; monetization</li>
+        <li>Analytics &amp; optimization loops</li>
+      </ul>
+    </article>
+
+    <article class="service-card">
+      <div class="service-icon">
+        <svg viewBox="0 0 48 48" fill="none"><path d="M24 4l5 11 12 1.5-9 8 2.5 12L24 30l-10.5 6.5L16 24l-9-8 12-1.5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      </div>
+      <h3>Social Media Marketing</h3>
+      <p>Cross-platform strategy and management across Instagram, TikTok, and X — content calendars, ads, and community growth that convert.</p>
+      <ul class="service-list">
+        <li>Content calendars &amp; creative</li>
+        <li>Paid ad campaign management</li>
+        <li>Community growth &amp; engagement</li>
+      </ul>
+    </article>
+
+    <article class="service-card">
+      <div class="service-icon">
+        <svg viewBox="0 0 48 48" fill="none"><path d="M6 38V22M16 38V14M26 38V26M36 38V8" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M4 38h40" stroke="currentColor" stroke-width="2"/></svg>
+      </div>
+      <h3>Growth &amp; Revenue Strategy</h3>
+      <p>Tying it all together — analytics, monetization paths, and reporting dashboards so you always know what's working and what's next.</p>
+      <ul class="service-list">
+        <li>Revenue &amp; analytics dashboards</li>
+        <li>Monetization roadmaps</li>
+        <li>Monthly performance reporting</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="work">
+  <div class="section-head">
+    <span class="eyebrow eyebrow-plain">How it works</span>
+    <h2>From idea to income, in four moves.</h2>
+  </div>
+  <div class="process-track">
+    <div class="process-step">
+      <span class="step-mark">Discover</span>
+      <h3>Audit &amp; Strategy</h3>
+      <p>We map your current site, pages, and channels, then define the fastest path to growth and revenue.</p>
+    </div>
+    <div class="process-step">
+      <span class="step-mark">Build</span>
+      <h3>Design &amp; Development</h3>
+      <p>Your website, software, or automation pipeline gets designed and built — clean, fast, and scalable.</p>
+    </div>
+    <div class="process-step">
+      <span class="step-mark">Launch</span>
+      <h3>Monetization Setup</h3>
+      <p>We configure monetization — Facebook in-stream ads, YouTube partner program, store checkout, or app billing.</p>
+    </div>
+    <div class="process-step">
+      <span class="step-mark">Scale</span>
+      <h3>Grow &amp; Optimize</h3>
+      <p>Ongoing content, automation, and reporting keep engagement and revenue climbing month over month.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <div class="section-head">
+    <span class="eyebrow eyebrow-plain">Packages</span>
+    <h2>Pick a starting point. We'll tailor the rest.</h2>
+  </div>
+  <div class="pricing-grid">
+    <div class="price-card">
+      <h3>Starter</h3>
+      <p class="price-tag">$299<span>/mo</span></p>
+      <p class="price-desc">For new pages and channels getting their foundation right.</p>
+      <ul>
+        <li>1 platform (FB or YouTube)</li>
+        <li>Content &amp; growth plan</li>
+        <li>Monetization setup</li>
+        <li>Monthly report</li>
+      </ul>
+      <a href="#contact" class="btn btn-ghost btn-block">Choose Starter</a>
+    </div>
+    <div class="price-card featured">
+      <span class="price-badge">Most Popular</span>
+      <h3>Growth</h3>
+      <p class="price-tag">$799<span>/mo</span></p>
+      <p class="price-desc">For brands ready to automate content and scale revenue.</p>
+      <ul>
+        <li>Website or web app build</li>
+        <li>FB + YouTube automation</li>
+        <li>Social media management</li>
+        <li>Bi-weekly reporting &amp; strategy</li>
+      </ul>
+      <a href="#contact" class="btn btn-primary btn-block">Choose Growth</a>
+    </div>
+    <div class="price-card">
+      <h3>Enterprise</h3>
+      <p class="price-tag">Custom</p>
+      <p class="price-desc">For multi-channel operations needing custom software.</p>
+      <ul>
+        <li>Custom software &amp; integrations</li>
+        <li>Full content automation suite</li>
+        <li>Dedicated growth team</li>
+        <li>Priority support</li>
+      </ul>
+      <a href="#contact" class="btn btn-ghost btn-block">Contact Sales</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-grid">
+    <div class="contact-info">
+      <span class="eyebrow eyebrow-plain">Get in touch</span>
+      <h2>Tell us what you're building.</h2>
+      <p>Send a few details and our team will reply with next steps — usually within one business day.</p>
+      <div class="contact-detail">
+        <strong>Email</strong>
+        <span>hraventicore@gmail.com</span>
+      </div>
+      <div class="contact-detail">
+        <strong>Response time</strong>
+        <span>Within 24 hours</span>
+      </div>
+      <div class="contact-detail">
+        <strong>Services</strong>
+        <span>Software · Web Design · Facebook · YouTube · Social Media</span>
+      </div>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your name">
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com">
+      </div>
+      <div class="form-row">
+        <label for="service">Service</label>
+        <select id="service" name="service">
+          <option value="Software Development">Software Development</option>
+          <option value="Website Design">Website Design</option>
+          <option value="Facebook Monetization">Facebook Monetization</option>
+          <option value="YouTube Automation">YouTube Channel Automation</option>
+          <option value="Social Media Marketing">Social Media Marketing</option>
+          <option value="Other">Other / Not sure</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="message">Project details</label>
+        <textarea id="message" name="message" rows="4" required placeholder="Tell us about your goals..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Send Message</button>
+      <p class="form-status" id="formStatus"></p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#" class="logo">
+        <svg width="28" height="28" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="17" cy="17" r="16" stroke="var(--accent)" stroke-width="1.5"/>
+          <circle cx="17" cy="17" r="5" fill="var(--accent)"/>
+        </svg>
+        <span>Aventicore</span>
+      </a>
+      <p>Software, web, and social growth — engineered as one system.</p>
+    </div>
+    <div class="footer-links">
+      <div>
+        <h4>Services</h4>
+        <a href="#services">Software Development</a>
+        <a href="#services">Website Design</a>
+        <a href="#services">Facebook Monetization</a>
+        <a href="#services">YouTube Automation</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#work">Process</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Aventicore. All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
